@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+
+    <title>Stock Market data Analysis Tools for free - Tradnomic</title>
+    <meta name="author" content="Shubham Khatri">
+    <meta name="description"
+        content="Analyzing the data of the stock market is a very important thing. Like Chart analysis and company statement analysis. You will find both at tradnomic.ml.">
+    <meta name="keywords" content="nifty,nifty list,technical analysis,fundamental analysis,stock markt,nifty50 list">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-gradient1">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-font1" style="font-size: xx-large;" href="#"><i
+                    class="bi bi-coin text-warning"></i> Tradnomic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="text-light" style="font-size: larger;"><i class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="use.html">How to use</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- menubar -->
+
+    <button class="btn btn-lg text-light btn-menu"
+        style="background-color: #00C1FD; font-weight: bold; font-size: x-large;" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i
+            class="fa fa-bars"></i></button>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel" class="text-dark">Select Stocks</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a href="nifty50.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty 50</a>
+            <a href="nifty100.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                100</a>
+            <a href="nifty200.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                200</a>
+            <a href="nifty500.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                500</a>
+            <a href="niftylargemid.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                large mid cap 250</a>
+            <a href="niftymicro250.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                micro cap 250</a>
+            <a href="niftymid50.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty mid
+                cap 50</a>
+            <a href="niftymid100.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                mid cap 100</a>
+            <a href="niftymid150.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                mid cap 150</a>
+            <a href="niftymidsmall400.html"
+                class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty mid small cap 400</a>
+            <a href="niftynext50.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                next 50</a>
+            <a href="niftysmall50.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                small cap 50</a>
+            <a href="niftysmall100.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                small cap 100</a>
+            <a href="niftysmall250.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                small cap 250</a>
+        </div>
+    </div>
+
+    <!-- keywords: 
+    nifty
+    nifty share price
+    nifty 50
+    nse india
+    stock market -->
+
+    <!-- main part -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md text-light">
+                <h1 class="mt-3 logo-text text-warning">Free Technical Analysis and Fundamental Analysis Tools</h1>
+                <div class="accordion accordion-flush mt-3" id="accordionFlushExample">
+                    <div class="accordion-item accordion-border">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed  accordion-border" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Click To read Info
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body text-dark">
+                                <p>Our website provides 100% free tools for the Indian stock market, American stock
+                                    market,
+                                    cryptocurrency, and many more things. Something you can see below and something you
+                                    will find very
+                                    soon.
+                                    So watch charts and analyze company data and stay connected with us by just
+                                    bookmarking the website
+                                    :)</p>
+                                <p>Currently, you will find data for nifty, nifty 50, NSE India, and another nifty stock
+                                    list. Happy
+                                    Trading Happy Investing. Because this website is for traders and investors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- cards -->
+    <div class="container mt-4">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="nifty50.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty 50</a>
+                        </h5>
+                        <p class="card-text">Includes the Whole list of Nifty 50 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="nifty100.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty 100</a>
+                        </h5>
+                        <p class="card-text">Includes the Whole list of Nifty 100 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="nifty200.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty 200</a>
+                        </h5>
+                        <p class="card-text">Includes the Whole list of Nifty 200 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="nifty500.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty 500</a>
+                        </h5>
+                        <p class="card-text">Includes the Whole list of Nifty 500 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="niftylargemid.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty Large Mid
+                                Cap 250</a></h5>
+                        <p class="card-text">Includes the Whole list of Nifty Large Mid Cap 250 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="niftymicro250.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty Micro Cap
+                                250</a></h5>
+                        <p class="card-text">Includes the Whole list of Nifty Micro Cap 250 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="niftymid50.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty Mid Cap
+                                50</a></h5>
+                        <p class="card-text">Includes the Whole list of Nifty Mid Cap 50 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="niftymid100.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty Mid Cap
+                                100</a></h5>
+                        <p class="card-text">Includes the Whole list of Nifty Mid Cap 100 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="niftymid150.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty Mid Cap
+                                150</a></h5>
+                        <p class="card-text">Includes the Whole list of Nifty Mid Cap 150 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="niftymidsmall400.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty Mid Small
+                                Cap 400</a></h5>
+                        <p class="card-text">Includes the Whole list of Nifty Mid Small Cap 400 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="niftynext50.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty Next
+                                50</a></h5>
+                        <p class="card-text">Includes the Whole list of Nifty Next 50 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="niftysmall50.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty Small Cap
+                                50</a></h5>
+                        <p class="card-text">Includes the Whole list of Nifty Small Cap 50 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="niftysmall100.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty Small Cap
+                                100</a></h5>
+                        <p class="card-text">Includes the Whole list of Nifty Small Cap 100 companies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card c-hover">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="niftysmall250.html"
+                                style="text-decoration: none; font-weight: bolder;" class="text-warning">Nifty Small Cap
+                                250</a></h5>
+                        <p class="card-text">Includes the Whole list of Nifty Small Cap 250 companies.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md text-light">
+                <hr class="mt-4 text-warning">
+                <footer>
+                    <h3 style="text-align: center;">Thank you for using Website</h3>
+                    <p style="text-align: center;" class="mb-5">Copyright © 2021 tradnomic.ml - All Rights Reserved.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="tables.js"></script>
+    <script src="datatables-simple-demo.js"></script>
+</body>
+
+</html>

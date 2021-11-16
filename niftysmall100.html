@@ -1,0 +1,2113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <title>Technical Analysis of Nifty Small Cap 100 Stocks - Tradnomic</title>
+    <meta name="author" content="Shubham Khatri">
+    <meta name="description" content="Find the Whole list of Nifty Small Cap 100 With chart and Financial Statmnts">
+    <meta name="keywords"
+        content="nifty small cap 100, nifty smallcap 100, niftysmallcap100, nifty smallcap 100 index, smallcap 100, small cap 100 index, nifty small cap 100 stocks, small cap 100">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-gradient1">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-font1" style="font-size: xx-large;" href="#"><i
+                    class="bi bi-coin text-warning"></i> Tradnomic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="text-light" style="font-size: larger;"><i class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="use.html">How to use</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- menubar -->
+
+    <button class="btn btn-lg text-light btn-menu"
+        style="background-color: #00C1FD; font-weight: bold; font-size: x-large;" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i
+            class="fa fa-bars"></i></button>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel" class="text-dark">Select Stocks</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a href="nifty50.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty 50</a>
+            <a href="nifty100.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                100</a>
+            <a href="nifty200.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                200</a>
+            <a href="nifty500.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                500</a>
+            <a href="niftylargemid.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                large mid cap 250</a>
+            <a href="niftymicro250.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                micro cap 250</a>
+            <a href="niftymid50.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty mid
+                cap 50</a>
+            <a href="niftymid100.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                mid cap 100</a>
+            <a href="niftymid150.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                mid cap 150</a>
+            <a href="niftymidsmall400.html"
+                class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty mid small cap 400</a>
+            <a href="niftynext50.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                next 50</a>
+            <a href="niftysmall50.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                small cap 50</a>
+            <a href="niftysmall100.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                small cap 100</a>
+            <a href="niftysmall250.html" class="d-block border border-2 a-links rounded border-dark fs-5 p-2 m-2">nifty
+                small cap 250</a>
+        </div>
+    </div>
+
+    <!-- detail -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h1 class="mt-3 logo-text text-warning">List of Nifty Smallcap 100 Index</h1>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item accordion-border">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed accordion-border" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                About nifty smallcap 100 Index
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The NIFTY Smallcap 100 Index comprises of 100 tradable, exchange listed companies.
+                                Market Representation: The NIFTY Smallcap 100 Index represents about 3.3% of the free
+                                float market capitalization of the stocks listed on NSE as on March 29, 2019.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main table -->
+
+    <div class="container mt-4 text-dark">
+        <div class="row">
+            <div class="col">
+                <main>
+                    <div class="container-fluid px-4">
+                        <div class="card mb-4">
+                            <div class="card-header text-dark">
+                                <i class="fas fa-table me-1"></i>
+                                Nifty Small Cap 100
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <!-- <th>Portfolio</th> -->
+                                            <th>Id</th>
+                                            <th>Name</th>
+                                            <th>Symbol</th>
+                                            <th>Sector</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <!-- <th>Portfolio</th> -->
+                                            <th>Id</th>
+                                            <th>Name</th>
+                                            <th>Symbol</th>
+                                            <th>Sector</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=AARTIDRUGS"
+                                                    target="_blank" style="text-decoration: none;">Aarti Drugs Ltd.</a>
+                                            </td>
+                                            <td id="symbol">AARTIDRUGS</td>
+                                            <td id="sector">PHARMA</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=AARTIDRUGS">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/AARTIDRUGS">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=AEGISCHEM"
+                                                    target="_blank" style="text-decoration: none;">Aegis Logistics
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">AEGISCHEM</td>
+                                            <td id="sector">SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=AEGISCHEM">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/AEGISCHEM">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=ALOKINDS"
+                                                    target="_blank" style="text-decoration: none;">Alok Industries
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">ALOKINDS</td>
+                                            <td id="sector">TEXTILES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=ALOKINDS">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/ALOKINDS">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=AMBER"
+                                                    target="_blank" style="text-decoration: none;">Amber Enterprises
+                                                    India Ltd.</a>
+                                            </td>
+                                            <td id="symbol">AMBER</td>
+                                            <td id="sector">CONSUMER GOODS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=AMBER">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/AMBER">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=ANURAS"
+                                                    target="_blank" style="text-decoration: none;">Anupam Rasayan India
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">ANURAS</td>
+                                            <td id="sector">CHEMICALS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=ANURAS">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/ANURAS">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=ASTRAZEN"
+                                                    target="_blank" style="text-decoration: none;">AstraZenca Pharma
+                                                    India Ltd.</a>
+                                            </td>
+                                            <td id="symbol">ASTRAZEN</td>
+                                            <td id="sector">PHARMA</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=ASTRAZEN">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/ASTRAZEN">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>7</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=AVANTIFEED"
+                                                    target="_blank" style="text-decoration: none;">Avanti Feeds Ltd.</a>
+                                            </td>
+                                            <td id="symbol">AVANTIFEED</td>
+                                            <td id="sector">CONSUMER GOODS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=AVANTIFEED">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/AVANTIFEED">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=BASF"
+                                                    target="_blank" style="text-decoration: none;">BASF India Ltd.</a>
+                                            </td>
+                                            <td id="symbol">BASF</td>
+                                            <td id="sector">CHEMICALS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=BASF">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/BASF">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>9</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=BEML"
+                                                    target="_blank" style="text-decoration: none;">BEML Ltd.</a>
+                                            </td>
+                                            <td id="symbol">BEML</td>
+                                            <td id="sector">INDUSTRIAL MANUFACTURING</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=BEML">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/BEML">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>10</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=BAJAJELEC"
+                                                    target="_blank" style="text-decoration: none;">Bajaj Electricals
+                                                    Ltd</a>
+                                            </td>
+                                            <td id="symbol">BAJAJELEC</td>
+                                            <td id="sector">CONSUMER GOODS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=BAJAJELEC">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/BAJAJELEC">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>11</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=BALAMINES"
+                                                    target="_blank" style="text-decoration: none;">Balaji Amines
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">BALAMINES</td>
+                                            <td id="sector">CHEMICALS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=BALAMINES">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/BALAMINES">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>12</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=BALRAMCHIN"
+                                                    target="_blank" style="text-decoration: none;">Balrampur Chini Mills
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">BALRAMCHIN</td>
+                                            <td id="sector">CONSUMER GOODS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=BALRAMCHIN">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/BALRAMCHIN">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>13</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=MAHABANK"
+                                                    target="_blank" style="text-decoration: none;">Bank of
+                                                    Maharashtra</a>
+                                            </td>
+                                            <td id="symbol">MAHABANK</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=MAHABANK">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/MAHABANK">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>14</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=BDL"
+                                                    target="_blank" style="text-decoration: none;">Bharat Dynamics
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">BDL</td>
+                                            <td id="sector">INDUSTRIAL MANUFACTURING</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=BDL">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/BDL">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>15</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=BIRLACORPN"
+                                                    target="_blank" style="text-decoration: none;">Birla Corporation
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">BIRLACORPN</td>
+                                            <td id="sector">CEMENT &amp; CEMENT PRODUCTS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=BIRLACORPN">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/BIRLACORPN">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>16</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=BSOFT"
+                                                    target="_blank" style="text-decoration: none;">Birlasoft Ltd.</a>
+                                            </td>
+                                            <td id="symbol">BSOFT</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=BSOFT">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/BSOFT">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>17</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=BURGERKING"
+                                                    target="_blank" style="text-decoration: none;">Burger King India
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">BURGERKING</td>
+                                            <td id="sector">CONSUMER SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=BURGERKING">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/BURGERKING">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>18</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=CESC"
+                                                    target="_blank" style="text-decoration: none;">CESC Ltd.</a>
+                                            </td>
+                                            <td id="symbol">CESC</td>
+                                            <td id="sector">POWER</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=CESC">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/CESC">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>19</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=CSBBANK"
+                                                    target="_blank" style="text-decoration: none;">CSB Bank Ltd.</a>
+                                            </td>
+                                            <td id="symbol">CSBBANK</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=CSBBANK">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/CSBBANK">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>20</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=CANFINHOME"
+                                                    target="_blank" style="text-decoration: none;">Can Fin Homes
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">CANFINHOME</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=CANFINHOME">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/CANFINHOME">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>21</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=CARBORUNIV"
+                                                    target="_blank" style="text-decoration: none;">Carborundum Universal
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">CARBORUNIV</td>
+                                            <td id="sector">INDUSTRIAL MANUFACTURING</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=CARBORUNIV">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/CARBORUNIV">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>22</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=CEATLTD"
+                                                    target="_blank" style="text-decoration: none;">Ceat Ltd.</a>
+                                            </td>
+                                            <td id="symbol">CEATLTD</td>
+                                            <td id="sector">AUTOMOBILE</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=CEATLTD">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/CEATLTD">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>23</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=CENTRALBK"
+                                                    target="_blank" style="text-decoration: none;">Central Bank of
+                                                    India</a>
+                                            </td>
+                                            <td id="symbol">CENTRALBK</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=CENTRALBK">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/CENTRALBK">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>24</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=CDSL"
+                                                    target="_blank" style="text-decoration: none;">Central Depository
+                                                    Services (India) Ltd.</a>
+                                            </td>
+                                            <td id="symbol">CDSL</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=CDSL">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/CDSL">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>25</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=CENTURYTEX"
+                                                    target="_blank" style="text-decoration: none;">Century Textile &amp;
+                                                    Industries Ltd.</a>
+                                            </td>
+                                            <td id="symbol">CENTURYTEX</td>
+                                            <td id="sector">PAPER AND JUTE</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=CENTURYTEX">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/CENTURYTEX">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>26</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=CHAMBLFERT"
+                                                    target="_blank" style="text-decoration: none;">Chambal Fertilizers
+                                                    &amp; Chemicals Ltd.</a>
+                                            </td>
+                                            <td id="symbol">CHAMBLFERT</td>
+                                            <td id="sector">FERTILISERS &amp; PESTICIDES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=CHAMBLFERT">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/CHAMBLFERT">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>27</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=COCHINSHIP"
+                                                    target="_blank" style="text-decoration: none;">Cochin Shipyard
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">COCHINSHIP</td>
+                                            <td id="sector">INDUSTRIAL MANUFACTURING</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=COCHINSHIP">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/COCHINSHIP">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>28</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=CAMS"
+                                                    target="_blank" style="text-decoration: none;">Computer Age
+                                                    Management Services Ltd.</a>
+                                            </td>
+                                            <td id="symbol">CAMS</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=CAMS">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/CAMS">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>29</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=CYIENT"
+                                                    target="_blank" style="text-decoration: none;">Cyient Ltd.</a>
+                                            </td>
+                                            <td id="symbol">CYIENT</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=CYIENT">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/CYIENT">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>30</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=DCMSHRIRAM"
+                                                    target="_blank" style="text-decoration: none;">DCM Shriram Ltd.</a>
+                                            </td>
+                                            <td id="symbol">DCMSHRIRAM</td>
+                                            <td id="sector">CONSUMER GOODS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=DCMSHRIRAM">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/DCMSHRIRAM">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>31</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=DELTACORP"
+                                                    target="_blank" style="text-decoration: none;">Delta Corp Ltd.</a>
+                                            </td>
+                                            <td id="symbol">DELTACORP</td>
+                                            <td id="sector">CONSUMER SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=DELTACORP">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/DELTACORP">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>32</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=DBL"
+                                                    target="_blank" style="text-decoration: none;">Dilip Buildcon
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">DBL</td>
+                                            <td id="sector">CONSTRUCTION</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=DBL">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/DBL">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>33</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=EIDPARRY"
+                                                    target="_blank" style="text-decoration: none;">E.I.D. Parry (India)
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">EIDPARRY</td>
+                                            <td id="sector">CONSUMER GOODS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=EIDPARRY">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/EIDPARRY">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>34</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=EDELWEISS"
+                                                    target="_blank" style="text-decoration: none;">Edelweiss Financial
+                                                    Services Ltd.</a>
+                                            </td>
+                                            <td id="symbol">EDELWEISS</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=EDELWEISS">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/EDELWEISS">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>35</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=ENGINERSIN"
+                                                    target="_blank" style="text-decoration: none;">Engineers India
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">ENGINERSIN</td>
+                                            <td id="sector">CONSTRUCTION</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=ENGINERSIN">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/ENGINERSIN">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>36</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=FDC"
+                                                    target="_blank" style="text-decoration: none;">FDC Ltd.</a>
+                                            </td>
+                                            <td id="symbol">FDC</td>
+                                            <td id="sector">PHARMA</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=FDC">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/FDC">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>37</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=FINEORG"
+                                                    target="_blank" style="text-decoration: none;">Fine Organic
+                                                    Industries Ltd.</a>
+                                            </td>
+                                            <td id="symbol">FINEORG</td>
+                                            <td id="sector">CHEMICALS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=FINEORG">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/FINEORG">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>38</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=FSL"
+                                                    target="_blank" style="text-decoration: none;">Firstsource Solutions
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">FSL</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=FSL">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/FSL">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>39</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=GMMPFAUDLR"
+                                                    target="_blank" style="text-decoration: none;">GMM Pfaudler Ltd.</a>
+                                            </td>
+                                            <td id="symbol">GMMPFAUDLR</td>
+                                            <td id="sector">INDUSTRIAL MANUFACTURING</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=GMMPFAUDLR">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/GMMPFAUDLR">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>40</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=GRANULES"
+                                                    target="_blank" style="text-decoration: none;">Granules India
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">GRANULES</td>
+                                            <td id="sector">PHARMA</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=GRANULES">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/GRANULES">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>41</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=GRAPHITE"
+                                                    target="_blank" style="text-decoration: none;">Graphite India
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">GRAPHITE</td>
+                                            <td id="sector">INDUSTRIAL MANUFACTURING</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=GRAPHITE">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/GRAPHITE">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>42</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=GNFC"
+                                                    target="_blank" style="text-decoration: none;">Gujarat Narmada
+                                                    Valley Fertilizers and Chemicals Ltd.</a>
+                                            </td>
+                                            <td id="symbol">GNFC</td>
+                                            <td id="sector">CHEMICALS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=GNFC">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/GNFC">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>43</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=HEG"
+                                                    target="_blank" style="text-decoration: none;">H.E.G. Ltd.</a>
+                                            </td>
+                                            <td id="symbol">HEG</td>
+                                            <td id="sector">INDUSTRIAL MANUFACTURING</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=HEG">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/HEG">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>44</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=HFCL"
+                                                    target="_blank" style="text-decoration: none;">HFCL Ltd.</a>
+                                            </td>
+                                            <td id="symbol">HFCL</td>
+                                            <td id="sector">TELECOM</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=HFCL">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/HFCL">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>45</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=HAPPSTMNDS"
+                                                    target="_blank" style="text-decoration: none;">Happiest Minds
+                                                    Technologies Ltd.</a>
+                                            </td>
+                                            <td id="symbol">HAPPSTMNDS</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=HAPPSTMNDS">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/HAPPSTMNDS">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>46</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=IDBI"
+                                                    target="_blank" style="text-decoration: none;">IDBI Bank Ltd.</a>
+                                            </td>
+                                            <td id="symbol">IDBI</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=IDBI">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/IDBI">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>47</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=IDFC"
+                                                    target="_blank" style="text-decoration: none;">IDFC Ltd.</a>
+                                            </td>
+                                            <td id="symbol">IDFC</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=IDFC">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/IDFC">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>48</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=INDIACEM"
+                                                    target="_blank" style="text-decoration: none;">India Cements
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">INDIACEM</td>
+                                            <td id="sector">CEMENT &amp; CEMENT PRODUCTS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=INDIACEM">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/INDIACEM">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>49</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=IBULHSGFIN"
+                                                    target="_blank" style="text-decoration: none;">Indiabulls Housing
+                                                    Finance Ltd.</a>
+                                            </td>
+                                            <td id="symbol">IBULHSGFIN</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=IBULHSGFIN">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/IBULHSGFIN">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>50</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=IEX"
+                                                    target="_blank" style="text-decoration: none;">Indian Energy
+                                                    Exchange Ltd.</a>
+                                            </td>
+                                            <td id="symbol">IEX</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=IEX">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/IEX">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>51</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=IOB"
+                                                    target="_blank" style="text-decoration: none;">Indian Overseas
+                                                    Bank</a>
+                                            </td>
+                                            <td id="symbol">IOB</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=IOB">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/IOB">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>52</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=INDIGOPNTS"
+                                                    target="_blank" style="text-decoration: none;">Indigo Paints
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">INDIGOPNTS</td>
+                                            <td id="sector">CONSUMER GOODS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=INDIGOPNTS">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/INDIGOPNTS">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>53</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=INFIBEAM"
+                                                    target="_blank" style="text-decoration: none;">Infibeam Avenues
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">INFIBEAM</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=INFIBEAM">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/INFIBEAM">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>54</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=INTELLECT"
+                                                    target="_blank" style="text-decoration: none;">Intellect Design
+                                                    Arena Ltd.</a>
+                                            </td>
+                                            <td id="symbol">INTELLECT</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=INTELLECT">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/INTELLECT">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>55</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=JBCHEPHARM"
+                                                    target="_blank" style="text-decoration: none;">J.B. Chemicals &amp;
+                                                    Pharmaceuticals Ltd.</a>
+                                            </td>
+                                            <td id="symbol">JBCHEPHARM</td>
+                                            <td id="sector">PHARMA</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=JBCHEPHARM">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/JBCHEPHARM">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>56</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=JKLAKSHMI"
+                                                    target="_blank" style="text-decoration: none;">JK Lakshmi Cement
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">JKLAKSHMI</td>
+                                            <td id="sector">CEMENT &amp; CEMENT PRODUCTS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=JKLAKSHMI">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/JKLAKSHMI">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>57</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=JMFINANCIL"
+                                                    target="_blank" style="text-decoration: none;">JM Financial Ltd.</a>
+                                            </td>
+                                            <td id="symbol">JMFINANCIL</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=JMFINANCIL">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/JMFINANCIL">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>58</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=JUBLINGREA"
+                                                    target="_blank" style="text-decoration: none;">Jubilant Ingrevia
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">JUBLINGREA</td>
+                                            <td id="sector">CHEMICALS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=JUBLINGREA">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/JUBLINGREA">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>59</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=JUSTDIAL"
+                                                    target="_blank" style="text-decoration: none;">Justdial Ltd.</a>
+                                            </td>
+                                            <td id="symbol">JUSTDIAL</td>
+                                            <td id="sector">CONSUMER SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=JUSTDIAL">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/JUSTDIAL">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>60</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=KEI"
+                                                    target="_blank" style="text-decoration: none;">KEI Industries
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">KEI</td>
+                                            <td id="sector">INDUSTRIAL MANUFACTURING</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=KEI">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/KEI">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>61</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=KPITTECH"
+                                                    target="_blank" style="text-decoration: none;">KPIT Technologies
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">KPITTECH</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=KPITTECH">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/KPITTECH">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>62</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=KALPATPOWR"
+                                                    target="_blank" style="text-decoration: none;">Kalpataru Power
+                                                    Transmission Ltd.</a>
+                                            </td>
+                                            <td id="symbol">KALPATPOWR</td>
+                                            <td id="sector">POWER</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=KALPATPOWR">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/KALPATPOWR">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>63</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=KALYANKJIL"
+                                                    target="_blank" style="text-decoration: none;">Kalyan Jewellers
+                                                    India Ltd.</a>
+                                            </td>
+                                            <td id="symbol">KALYANKJIL</td>
+                                            <td id="sector">CONSUMER GOODS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=KALYANKJIL">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/KALYANKJIL">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>64</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=KEC"
+                                                    target="_blank" style="text-decoration: none;">Kec International
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">KEC</td>
+                                            <td id="sector">POWER</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=KEC">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/KEC">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>65</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=LXCHEM"
+                                                    target="_blank" style="text-decoration: none;">Laxmi Organic
+                                                    Industries Ltd.</a>
+                                            </td>
+                                            <td id="symbol">LXCHEM</td>
+                                            <td id="sector">CHEMICALS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=LXCHEM">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/LXCHEM">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>66</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=LUXIND"
+                                                    target="_blank" style="text-decoration: none;">Lux Industries
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">LUXIND</td>
+                                            <td id="sector">TEXTILES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=LUXIND">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/LUXIND">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>67</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=MMTC"
+                                                    target="_blank" style="text-decoration: none;">MMTC Ltd.</a>
+                                            </td>
+                                            <td id="symbol">MMTC</td>
+                                            <td id="sector">SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=MMTC">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/MMTC">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>68</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=MAZDOCK"
+                                                    target="_blank" style="text-decoration: none;">Mazagoan Dock
+                                                    Shipbuilders Ltd.</a>
+                                            </td>
+                                            <td id="symbol">MAZDOCK</td>
+                                            <td id="sector">INDUSTRIAL MANUFACTURING</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=MAZDOCK">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/MAZDOCK">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>69</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=MCX"
+                                                    target="_blank" style="text-decoration: none;">Multi Commodity
+                                                    Exchange of India Ltd.</a>
+                                            </td>
+                                            <td id="symbol">MCX</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=MCX">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/MCX">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>70</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=NBCC"
+                                                    target="_blank" style="text-decoration: none;">NBCC (India) Ltd.</a>
+                                            </td>
+                                            <td id="symbol">NBCC</td>
+                                            <td id="sector">CONSTRUCTION</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=NBCC">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/NBCC">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>71</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=PNBHOUSING"
+                                                    target="_blank" style="text-decoration: none;">PNB Housing Finance
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">PNBHOUSING</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=PNBHOUSING">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/PNBHOUSING">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>72</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=PVR"
+                                                    target="_blank" style="text-decoration: none;">PVR Ltd.</a>
+                                            </td>
+                                            <td id="symbol">PVR</td>
+                                            <td id="sector">MEDIA ENTERTAINMENT &amp; PUBLICATION</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=PVR">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/PVR">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>73</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=PRINCEPIPE"
+                                                    target="_blank" style="text-decoration: none;">Prince Pipes and
+                                                    Fittings Ltd.</a>
+                                            </td>
+                                            <td id="symbol">PRINCEPIPE</td>
+                                            <td id="sector">INDUSTRIAL MANUFACTURING</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=PRINCEPIPE">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/PRINCEPIPE">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>74</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=QUESS"
+                                                    target="_blank" style="text-decoration: none;">Quess Corp Ltd.</a>
+                                            </td>
+                                            <td id="symbol">QUESS</td>
+                                            <td id="sector">SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=QUESS">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/QUESS">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>75</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=RITES"
+                                                    target="_blank" style="text-decoration: none;">RITES Ltd.</a>
+                                            </td>
+                                            <td id="symbol">RITES</td>
+                                            <td id="sector">SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=RITES">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/RITES">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>76</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=RADICO"
+                                                    target="_blank" style="text-decoration: none;">Radico Khaitan
+                                                    Ltd</a>
+                                            </td>
+                                            <td id="symbol">RADICO</td>
+                                            <td id="sector">CONSUMER GOODS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=RADICO">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/RADICO">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>77</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=RVNL"
+                                                    target="_blank" style="text-decoration: none;">Rail Vikas Nigam
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">RVNL</td>
+                                            <td id="sector">CONSTRUCTION</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=RVNL">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/RVNL">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>78</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=RAIN"
+                                                    target="_blank" style="text-decoration: none;">Rain Industries
+                                                    Ltd</a>
+                                            </td>
+                                            <td id="symbol">RAIN</td>
+                                            <td id="sector">CHEMICALS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=RAIN">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/RAIN">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>79</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=RALLIS"
+                                                    target="_blank" style="text-decoration: none;">Rallis India Ltd.</a>
+                                            </td>
+                                            <td id="symbol">RALLIS</td>
+                                            <td id="sector">FERTILISERS &amp; PESTICIDES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=RALLIS">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/RALLIS">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>80</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=ROSSARI"
+                                                    target="_blank" style="text-decoration: none;">Rossari Biotech
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">ROSSARI</td>
+                                            <td id="sector">CHEMICALS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=ROSSARI">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/ROSSARI">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>81</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=ROUTE"
+                                                    target="_blank" style="text-decoration: none;">Route Mobile Ltd.</a>
+                                            </td>
+                                            <td id="symbol">ROUTE</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=ROUTE">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/ROUTE">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>82</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=SEQUENT"
+                                                    target="_blank" style="text-decoration: none;">Sequent Scientific
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">SEQUENT</td>
+                                            <td id="sector">PHARMA</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=SEQUENT">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/SEQUENT">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>83</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=SONATSOFTW"
+                                                    target="_blank" style="text-decoration: none;">Sonata Software
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">SONATSOFTW</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=SONATSOFTW">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/SONATSOFTW">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>84</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=SPICEJET"
+                                                    target="_blank" style="text-decoration: none;">Spicejet Ltd.</a>
+                                            </td>
+                                            <td id="symbol">SPICEJET</td>
+                                            <td id="sector">SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=SPICEJET">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/SPICEJET">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>85</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=STLTECH"
+                                                    target="_blank" style="text-decoration: none;">Sterlite Technologies
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">STLTECH</td>
+                                            <td id="sector">TELECOM</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=STLTECH">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/STLTECH">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>86</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=STAR"
+                                                    target="_blank" style="text-decoration: none;">Strides Pharma
+                                                    Science Ltd.</a>
+                                            </td>
+                                            <td id="symbol">STAR</td>
+                                            <td id="sector">PHARMA</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=STAR">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/STAR">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>87</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=SPARC"
+                                                    target="_blank" style="text-decoration: none;">Sun Pharma Advanced
+                                                    Research Company Ltd.</a>
+                                            </td>
+                                            <td id="symbol">SPARC</td>
+                                            <td id="sector">PHARMA</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=SPARC">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/SPARC">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>88</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=SUNTECK"
+                                                    target="_blank" style="text-decoration: none;">Sunteck Realty
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">SUNTECK</td>
+                                            <td id="sector">CONSTRUCTION</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=SUNTECK">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/SUNTECK">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>89</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=SUZLON"
+                                                    target="_blank" style="text-decoration: none;">Suzlon Energy
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">SUZLON</td>
+                                            <td id="sector">INDUSTRIAL MANUFACTURING</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=SUZLON">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/SUZLON">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>90</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=TV18BRDCST"
+                                                    target="_blank" style="text-decoration: none;">TV18 Broadcast
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">TV18BRDCST</td>
+                                            <td id="sector">MEDIA ENTERTAINMENT &amp; PUBLICATION</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=TV18BRDCST">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/TV18BRDCST">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>91</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=TANLA"
+                                                    target="_blank" style="text-decoration: none;">Tanla Platforms
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">TANLA</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=TANLA">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/TANLA">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>92</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=THYROCARE"
+                                                    target="_blank" style="text-decoration: none;">Thyrocare
+                                                    Technologies Ltd.</a>
+                                            </td>
+                                            <td id="symbol">THYROCARE</td>
+                                            <td id="sector">HEALTHCARE SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=THYROCARE">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/THYROCARE">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>93</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=TRIDENT"
+                                                    target="_blank" style="text-decoration: none;">Trident Ltd.</a>
+                                            </td>
+                                            <td id="symbol">TRIDENT</td>
+                                            <td id="sector">TEXTILES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=TRIDENT">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/TRIDENT">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>94</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=UTIAMC"
+                                                    target="_blank" style="text-decoration: none;">UTI Asset Management
+                                                    Company Ltd.</a>
+                                            </td>
+                                            <td id="symbol">UTIAMC</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=UTIAMC">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/UTIAMC">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>95</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=UJJIVANSFB"
+                                                    target="_blank" style="text-decoration: none;">Ujjivan Small Finance
+                                                    Bank Ltd.</a>
+                                            </td>
+                                            <td id="symbol">UJJIVANSFB</td>
+                                            <td id="sector">FINANCIAL SERVICES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=UJJIVANSFB">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/UJJIVANSFB">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>96</td>
+                                            <td>
+                                                <a id="company" href="https://www.tradingview.com/chart/?symbol=VIPIND"
+                                                    target="_blank" style="text-decoration: none;">V.I.P. Industries
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">VIPIND</td>
+                                            <td id="sector">CONSUMER GOODS</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=VIPIND">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/VIPIND">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>97</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=VAKRANGEE"
+                                                    target="_blank" style="text-decoration: none;">Vakrangee Ltd.</a>
+                                            </td>
+                                            <td id="symbol">VAKRANGEE</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=VAKRANGEE">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/VAKRANGEE">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>98</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=WELSPUNIND"
+                                                    target="_blank" style="text-decoration: none;">Welspun India
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">WELSPUNIND</td>
+                                            <td id="sector">TEXTILES</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=WELSPUNIND">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/WELSPUNIND">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>99</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=WOCKPHARMA"
+                                                    target="_blank" style="text-decoration: none;">Wockhardt Ltd.</a>
+                                            </td>
+                                            <td id="symbol">WOCKPHARMA</td>
+                                            <td id="sector">PHARMA</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=WOCKPHARMA">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/WOCKPHARMA">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>100</td>
+                                            <td>
+                                                <a id="company"
+                                                    href="https://www.tradingview.com/chart/?symbol=ZENSARTECH"
+                                                    target="_blank" style="text-decoration: none;">Zensar Technolgies
+                                                    Ltd.</a>
+                                            </td>
+                                            <td id="symbol">ZENSARTECH</td>
+                                            <td id="sector">IT</td>
+                                            <td id="technical"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.tradingview.com/chart/?symbol=ZENSARTECH">Technical
+                                                        Analysis</a></button></td>
+                                            <td id="fundamental"><button class="btn btn-secondary"><a target="_blank"
+                                                        style="text-decoration: none; color: white;"
+                                                        href="https://www.screener.in/company/ZENSARTECH">Fundamental
+                                                        Analysis</a></button></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md text-light">
+                <hr class="mt-4 text-warning">
+                <footer>
+                    <h3 style="text-align: center;">Thank you for using Website</h3>
+                    <p style="text-align: center;" class="mb-5">Copyright © 2021 tradnomic.ml - All Rights Reserved.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="tables.js"></script>
+    <script src="datatables-simple-demo.js"></script>
+
+</body>
+
+</html>
